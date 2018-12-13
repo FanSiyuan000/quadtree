@@ -1,0 +1,15 @@
+#include"stdlib.h"
+#include"treeStructure.h"
+
+#ifndef WRITETREE_H 
+#define WRITETREE_H
+void writeTree(Node *head);
+void writeNode(FILE *fp, Node *node);
+void printOut(FILE *fp, Node *node);
+void destroyTree(Node*node);
+void removeChildren(Node*parent);
+void make_leaf1(Node *node);
+void make_leaf2(Node *parent);
+double nodeValue(Node *node, double time);
+double value(double x, double y, double time);
+#endif 
